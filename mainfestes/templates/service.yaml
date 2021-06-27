@@ -2,8 +2,8 @@ apiVersion: v1
 kind: service
 metadata:
   labels:
-    app: nginx
-    tag: alpine
+  - app: nginx
+  - tag: alpine
   name: nginx-alpine
   namespace: {{ .vlaues.namespace.name }}
 spec:
