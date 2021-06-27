@@ -12,8 +12,8 @@ spec:
    protocol: TCP
    targetPort: {{ .values.service.port }}
  selector:
-   app: nginx
-   tag: alpine
+ - app: nginx
+ - tag: alpine
  type: {{ .values.service.type }}
 
 spec:
@@ -22,7 +22,7 @@ spec:
    protocol: TCP
    targetPort: {{ .values.service.port }}
  selector:
-   app: nginx
-   tag: alpine
+ - app: nginx
+ - tag: alpine
  type: {{ .values.service.type }}
 
