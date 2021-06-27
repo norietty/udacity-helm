@@ -7,22 +7,12 @@ metadata:
   name: nginx-alpine
   namespace: {{ .vlaues.namespace.name }}
 spec:
- ports:
- - port: {{ .values.service.port }}
-   protocol: TCP
-   targetPort: {{ .values.service.port }}
- selector:
- - app: nginx
- - tag: alpine
- type: {{ .values.service.type }}
-
-spec:
- ports:
- - port: {{ .values.service.port }}
-   protocol: TCP
-   targetPort: {{ .values.service.port }}
- selector:
- - app: nginx
- - tag: alpine
- type: {{ .values.service.type }}
+  ports:
+  - port: {{ .values.service.port }}
+    protocol: TCP
+    targetPort: {{ .values.service.port }}
+  selector:
+  - app: nginx
+  - tag: alpine
+  type: {{ .values.service.type }}
 
