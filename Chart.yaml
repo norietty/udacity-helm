@@ -1,0 +1,10 @@
+apiVersion: v1
+name: nginx-deployment
+description: install inginx app
+keywords:
+  nginx
+version: 1.0.0
+maintainers:
+  name: nori
+  email: nori@xyz.com
+
