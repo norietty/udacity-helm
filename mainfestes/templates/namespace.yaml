@@ -1,5 +1,5 @@
 apiVersion: v1
-kind: namesapce
+kind: Namesapce
 metadata:
   labels:
     tier: test
