@@ -12,7 +12,7 @@ spec:
     matchLabels:
       app: nginx
       tag: alpine
-  stratgey:
+  strategy:
     rollingUpdate:
       maxSurge: 25%
       maxUnavailble: 25%
