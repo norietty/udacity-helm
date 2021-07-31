@@ -1,7 +1,7 @@
 namespace: 
   name: prod
 
-replicas: 2
+replicas: 4
 
 image:
   repository: nginx
