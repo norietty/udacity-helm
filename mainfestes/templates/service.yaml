@@ -5,6 +5,7 @@ metadata:
     app: nginx
     tag: alpine
   name: nginx-version
+  namespace: {{ .Values.namespace.name }}
 spec:
   ports:
   - port: {{ .Values.service.port }}
